@@ -69,4 +69,4 @@ This project demonstrates the architecture and functionality of an **AI agent** 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Denos-PB/AI-agent.git
-   cd ai-agent-weather
+   cd AI-agent
