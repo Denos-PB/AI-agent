@@ -1,16 +1,16 @@
 # 🍽️ AI-Agent: Recipe Generator 🤖✨
 
-## **Architecture Diagram** 🏗️🖥️📊
+## **Architecture Diagram** 📊
 
 ![Architecture Diagram](https://raw.githubusercontent.com/Denos-PB/AI-agent/main/diagram-export-03.04.2025-12_43_19.png)
 
-## **Description** 📜🤖🍴
+## **Description** 📜
 
-This project demonstrates an **AI-powered recipe agent** that utilizes **Gemini** (a Large Language Model) to generate dish recipes based on user input. Additionally, it integrates an **SQLite database** to store and retrieve recipe-related data for future improvements and personalization. 🍕📊🍲
+This project demonstrates an **AI-powered recipe agent** that utilizes **Gemini** (a Large Language Model) to generate dish recipes based on user input. Additionally, it integrates an **SQLite database** to store and retrieve recipe-related data for future improvements and personalization. 
 
 ---
 
-## **Key Features** ⭐⚙️📌
+## **Key Features** ⭐
 
 1. **User Input Handling**:
    - Accepts user queries (e.g., "Give me a pasta recipe" or "Suggest a dessert with chocolate").
@@ -27,11 +27,11 @@ This project demonstrates an **AI-powered recipe agent** that utilizes **Gemini*
 4. **Future Enhancements**:
    - Machine learning-based recommendations based on user preferences.
    - Integration with external recipe APIs for broader recipe diversity.
-   - User profile management for personalized recipe suggestions. 📊🚀🍛
+   - User profile management for personalized recipe suggestions. 
 
 ---
 
-## **How It Works** ⚡🔍🍜
+## **How It Works** 🔍
 
 1. **User Query**:
    - The user requests a recipe (e.g., "How do I make lasagna?").
@@ -47,20 +47,20 @@ This project demonstrates an **AI-powered recipe agent** that utilizes **Gemini*
    - If a similar query exists, the agent retrieves and refines past recipes.
 
 5. **Response Output**:
-   - The agent returns the recipe to the user in a structured format. 🍛📥🥗
+   - The agent returns the recipe to the user in a structured format. 
 
 ---
 
-## **Technologies Used** 🖥️🛠️📡
+## **Technologies Used** 🛠️
 
 - **Gemini (LLM)**: AI model for recipe generation.
 - **SQLite**: Database for storing user queries and recipes.
 - **Python**: Core programming language for implementation.
-- **Preprocessing Techniques**: Tokenization, text cleaning, and data structuring. 🧠🗄️🍲
+- **Preprocessing Techniques**: Tokenization, text cleaning, and data structuring. 
 
 ---
 
-## **Installation** 📦🛠️🚀
+## **Installation** 📦
 
 1. Clone the repository:
    ```bash
