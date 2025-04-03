@@ -1,72 +1,74 @@
-# AI-agent
+# 🍽️ AI-Agent: Recipe Generator 🤖✨
 
-## Architecture Diagram
+## **Architecture Diagram** 🏗️🖥️📊
 
-![Architecture Diagram](https://raw.githubusercontent.com/Denos-PB/AI-agent/main/diagram-export-20.03.2025-23_31_14.png)
+![Architecture Diagram](https://raw.githubusercontent.com/Denos-PB/AI-agent/main/diagram-export-03.04.2025-12_43_19.png)
 
-## Description
-# AI Agent with LLM and Weather API Integration
+## **Description** 📜🤖🍴
 
-This project demonstrates the architecture and functionality of an **AI agent** that leverages a **Large Language Model (LLM)** to interact with users and fetch weather data using an external **Weather API**. The agent processes user input, detects intent, and provides relevant responses, either by generating a general response using the LLM or by fetching weather data from the API.
+This project demonstrates an **AI-powered recipe agent** that utilizes **Gemini** (a Large Language Model) to generate dish recipes based on user input. Additionally, it integrates an **SQLite database** to store and retrieve recipe-related data for future improvements and personalization. 🍕📊🍲
 
 ---
 
-## **Key Features**
+## **Key Features** ⭐⚙️📌
 
 1. **User Input Handling**:
-   - The AI agent accepts user input (e.g., "What's the weather in New York?").
-   - The input is preprocessed to clean and tokenize the text for further processing.
+   - Accepts user queries (e.g., "Give me a pasta recipe" or "Suggest a dessert with chocolate").
+   - Preprocesses input to clean and structure it for better understanding.
 
-2. **Intent Detection**:
-   - The LLM is used to detect the user's intent (e.g., weather query or general query).
-   - If the intent is a **weather query**, the agent proceeds to fetch weather data.
-   - If the intent is a **general query**, the agent generates a response using the LLM.
+2. **Recipe Generation with Gemini**:
+   - The AI agent uses **Gemini** to generate recipes based on the user’s request.
+   - The model considers ingredients, cuisine type, and dietary restrictions if provided.
 
-3. **Weather API Integration**:
-   - For weather queries, the agent calls an external **Weather API** to fetch real-time weather data.
-   - The weather data is formatted and sent back to the user.
+3. **Database Integration (SQLite)**:
+   - Stores user queries and generated recipes for analysis and improvements.
+   - Retrieves past recommendations to enhance user experience.
 
-4. **Response Generation**:
-   - For general queries, the LLM generates a response based on the user's input.
-   - The response is postprocessed and sent back to the user.
+4. **Future Enhancements**:
+   - Machine learning-based recommendations based on user preferences.
+   - Integration with external recipe APIs for broader recipe diversity.
+   - User profile management for personalized recipe suggestions. 📊🚀🍛
 
 ---
 
-## **How It Works**
+## **How It Works** ⚡🔍🍜
 
-1. **User Input**:
-   - The user asks a question or provides input (e.g., "What's the weather in Paris?").
+1. **User Query**:
+   - The user requests a recipe (e.g., "How do I make lasagna?").
 
 2. **Preprocessing**:
-   - The input is cleaned and tokenized.
+   - The input is cleaned and structured for better understanding.
 
-3. **Intent Detection**:
-   - The LLM detects whether the input is a weather query or a general query.
+3. **Recipe Generation**:
+   - The **Gemini LLM** generates a relevant recipe based on the request.
 
-4. **Weather Query**:
-   - If the input is a weather query, the agent extracts the city name and calls the Weather API.
-   - The weather data is fetched and formatted.
+4. **Database Interaction (SQLite)**:
+   - The generated recipe is stored for future reference.
+   - If a similar query exists, the agent retrieves and refines past recipes.
 
-5. **General Query**:
-   - If the input is a general query, the LLM generates a response.
-
-6. **Output**:
-   - The agent sends the weather data or general response back to the user.
+5. **Response Output**:
+   - The agent returns the recipe to the user in a structured format. 🍛📥🥗
 
 ---
 
-## **Technologies Used**
+## **Technologies Used** 🖥️🛠️📡
 
-- **Large Language Model (LLM)**: For intent detection and response generation.
-- **Weather API**: For fetching real-time weather data.
-- **Python**: For implementing the AI agent and integrating the LLM and API.
-- **Tokenization and Cleaning**: For preprocessing user input.
+- **Gemini (LLM)**: AI model for recipe generation.
+- **SQLite**: Database for storing user queries and recipes.
+- **Python**: Core programming language for implementation.
+- **Preprocessing Techniques**: Tokenization, text cleaning, and data structuring. 🧠🗄️🍲
 
 ---
 
-## **Installation**
+## **Installation** 📦🛠️🚀
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Denos-PB/AI-agent.git
    cd AI-agent
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+3. Run the agent:
+   ```bash
+   python main.py
